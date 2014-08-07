@@ -35,15 +35,6 @@ class ViewController: UIViewController {
             var product = firstInt! * secondInt!
 
             resultsLabel.text = "\(product)"
-
-            if product % 2 == 0
-            {
-                view.backgroundColor = UIColor.greenColor()
-            }
-            else
-            {
-                view.backgroundColor = UIColor.orangeColor()
-            }
         }
     }
 }
