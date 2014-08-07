@@ -50,15 +50,6 @@ class ViewController: UIViewController {
             resultsLabel.text = "Cannot calculate"
             view.backgroundColor = UIColor.whiteColor()
         }
-        animateLabel()
-    }
-
-    func animateLabel()
-    {
-        resultsLabel.alpha = 0
-        UIView.animateWithDuration(2, animations: {
-                self.resultsLabel.alpha = 1
-            })
     }
 }
 
