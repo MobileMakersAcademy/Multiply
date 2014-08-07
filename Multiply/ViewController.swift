@@ -38,13 +38,11 @@ class ViewController: UIViewController {
 
             if product % 2 == 0
             {
-//                view.backgroundColor = UIColor.greenColor()
-                myImageView.image = UIImage(named: "greenImage")
-                
+                view.backgroundColor = UIColor.greenColor()
             }
             else
             {
-                myImageView.image = UIImage(named: "orangeImage")
+                view.backgroundColor = UIColor.orangeColor()
             }
         }
         else
