@@ -45,11 +45,6 @@ class ViewController: UIViewController {
                 view.backgroundColor = UIColor.orangeColor()
             }
         }
-        else
-        {
-            resultsLabel.text = "Cannot calculate"
-            view.backgroundColor = UIColor.whiteColor()
-        }
     }
 }
 
