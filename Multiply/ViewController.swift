@@ -9,33 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-                            
-    @IBOutlet weak var textField1: UITextField!
-    @IBOutlet weak var textField2: UITextField!
-    @IBOutlet weak var resultsLabel: UILabel!
-    @IBOutlet weak var myImageView: UIImageView!
+
+    @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var textFieldOne: UITextField!
+    @IBOutlet var textFieldTwo: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func onButtonTapped(sender: UIButton)
     {
-        var firstInt = textField1.text.toInt()
-        var secondInt = textField2.text.toInt()
+        var firstInt = textFieldOne.text.toInteger()
+        var secondInt = textFieldTwo.text.toInteger()
 
-        if firstInt && secondInt
-        {
-            var product = firstInt! * secondInt!
+        var result = firstInt * secondInt
 
-            resultsLabel.text = "\(product)"
-        }
+        resultLabel.text = "\(result)"
     }
+
 }
 

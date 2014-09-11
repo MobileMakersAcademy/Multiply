@@ -40,7 +40,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication!) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
-
+extension String
+{
+    func toInteger() -> Int
+    {
+        if self.toInt() == nil
+        {
+            return 0
+        }
+        else
+        {
+            return self.toInt()!
+        }
+    }
 }
 
